@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Loader2, Instagram, Linkedin } from 'lucide-react';
 
 export default function ContactSection() {
+  const vite_url=import.meta.env.VITE_API_URL
   const [formData, setFormData] = useState({ name: '', email: '', message: '', service: 'web application' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [toastMessage, setToastMessage] = useState(null);
@@ -33,7 +34,7 @@ export default function ContactSection() {
     setToastMessage(null);
 
     try {
-      const response = await fetch('http://localhost:8000/api/contact/submit', {
+      const response = await fetch(`${vite_url}/api/contact/submit`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -62,7 +63,7 @@ export default function ContactSection() {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('http://localhost:8000/api/contact/verify-otp', {
+      const response = await fetch(`${vite_url}/api/contact/verify-otp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: formData.email, otp, contactId }),

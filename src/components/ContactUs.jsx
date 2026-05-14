@@ -6,7 +6,7 @@ const ContactUs = () => {
     email: '',
     service: 'web application',
   });
-  
+  const vite_url=import.meta.env.VITE_URL
   const [otp, setOtp] = useState('');
   const [isOtpSent, setIsOtpSent] = useState(false);
   const [isVerified, setIsVerified] = useState(false);
@@ -21,7 +21,7 @@ const ContactUs = () => {
     e.preventDefault();
     setMessage('Sending OTP...');
     try {
-      const response = await fetch('http://localhost:8000/api/contact/submit', {
+      const response = await fetch('vite_url/api/contact/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -43,7 +43,7 @@ const ContactUs = () => {
     e.preventDefault();
     setMessage('Verifying...');
     try {
-      const response = await fetch('http://localhost:8000/api/contact/verify-otp', {
+      const response = await fetch('vite_url/api/contact/verify-otp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: formData.email, otp, contactId }),
