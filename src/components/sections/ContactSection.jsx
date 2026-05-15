@@ -319,7 +319,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="text-lg font-bold mb-1">Email</h4>
                     <a href="mailto:prestigewavemedia@gmail.com" className="text-slate-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                      prestigewavemedia@gmail.com
+                      prestigewavemediasupport@@gmail.com
                     </a>
                   </div>
                 </div>
