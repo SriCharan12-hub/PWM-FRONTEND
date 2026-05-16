@@ -44,7 +44,7 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Contact</h3>
             <ul className="flex flex-col gap-2">
               <li className="text-sm text-slate-500 dark:text-zinc-400">prestigewavemedia@gmail.com</li>
-              <li className="text-sm text-slate-500 dark:text-zinc-400">+91 81250 74369</li>
+              <li className="text-sm text-slate-500 dark:text-zinc-400">+91 7799799736</li>
               <li className="text-sm text-slate-500 dark:text-zinc-400 mt-2">Hyderabad, India</li>
             </ul>
           </div>

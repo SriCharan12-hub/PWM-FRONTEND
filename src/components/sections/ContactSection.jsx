@@ -319,7 +319,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="text-lg font-bold mb-1">Email</h4>
                     <a href="mailto:prestigewavemedia@gmail.com" className="text-slate-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                      prestigewavemediasupport@@gmail.com
+                      prestigewavemediasupport@gmail.com
                     </a>
                   </div>
                 </div>
@@ -331,7 +331,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="text-lg font-bold mb-1">Phone</h4>
                     <a href="tel:+918125074369" className="text-slate-600 dark:text-zinc-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
-                      +91 81250 74369
+                      +91  7799799736
                     </a>
                   </div>
                 </div>
